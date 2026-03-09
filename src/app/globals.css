@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-jakarta), system-ui, sans-serif;
-  --font-display: var(--font-outfit), system-ui, sans-serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --color-brand-50: #f5f3ff;
   --color-brand-100: #ede9fe;
   --color-brand-200: #ddd6fe;
@@ -96,9 +96,35 @@ button {
 .hero-gradient {
   background: radial-gradient(circle at center, rgba(99, 102, 241, 0.15) 0%, rgba(2, 6, 23, 0) 70%);
 }
-.perspective-1000 { perspective: 1000px; }
-.preserve-3d { transform-style: preserve-3d; }
-.backface-hidden { backface-visibility: hidden; }
-.hover-glow { position: relative; }
-.hover-glow::after { content: ''; position: absolute; inset: -2px; background: linear-gradient(45deg, #4f39f6, #f97316, #fbbf24); filter: blur(15px); z-index: -1; opacity: 0; transition: opacity 0.3s ease; border-radius: inherit; }
-.hover-glow:hover::after { opacity: 0.3; }
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.hover-glow {
+  position: relative;
+}
+
+.hover-glow::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(45deg, #4f39f6, #f97316, #fbbf24);
+  filter: blur(15px);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+}
+
+.hover-glow:hover::after {
+  opacity: 0.3;
+}
