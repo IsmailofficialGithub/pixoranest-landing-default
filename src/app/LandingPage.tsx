@@ -692,9 +692,9 @@ export default function LandingPage() {
                   
                   <div className="glass h-full p-8 rounded-[32px] border-white/10 hover:border-white/20 transition-all duration-500 overflow-hidden relative group/card">
                     {/* Background Illustration */}
-                    <div className="absolute top-0 right-0 w-1/2 h-1/2 -z-10 opacity-20 group-hover/card:scale-110 group-hover/card:opacity-30 transition-all duration-700 pointer-events-none">
+                    {/* <div className="absolute top-0 right-0 w-1/2 h-1/2 -z-10 opacity-20 group-hover/card:scale-110 group-hover/card:opacity-30 transition-all duration-700 pointer-events-none">
                       <img src={f.image} alt="" className="w-full h-full object-contain" />
-                    </div>
+                    </div> */}
 
                     <div className={cn("mb-6 p-4 rounded-2xl bg-slate-900/50 border border-white/5 relative group-hover:scale-110 transition-transform duration-500 shadow-2xl w-fit")}>
                        <div className={cn("text-transparent bg-clip-text bg-gradient-to-br", f.gradient)}>
